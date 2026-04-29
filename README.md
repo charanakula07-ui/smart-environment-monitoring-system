@@ -22,5 +22,3 @@ This project monitors environmental parameters like temperature, humidity, light
 3. Run:
    python3 smart_monitor.py
 
-## Author
-Charan
