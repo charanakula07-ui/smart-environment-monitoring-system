@@ -4,14 +4,14 @@
 #  Run     : python3 smart_monitor.py
 # =============================================================
 
-import RPi.GPIO as GPIO
-import board
-import adafruit_dht
-import requests
-import time
-import csv
-import json
-from datetime import datetime
+import RPi.GPIO as GPIO         # GPIO control (LED, buzzer)
+import board                    # To access Raspberry Pi pin (D4)
+import adafruit_dht             # Library for DHT11 sensor
+import requests                 # For cloud upload (ThingSpeak)
+import time                     # For delay between readings
+import csv                      # Used to store sensor data in CSV file
+import json                     # To read configuration file
+from datetime import datetime   # Used to generate timestamp for each reading
 
 # =============================================================
 #  SECTION 1 — LOAD SETTINGS FROM config.json
